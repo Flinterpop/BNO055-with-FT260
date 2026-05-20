@@ -7,7 +7,7 @@ The Bosch BNO055 is a 9 DOF MEMs sensor. I used a version packaged on an Adafrui
 
 The BNO055 supports I2C and UART interfaces and I was proved with a Mikrotik USB to I2C Click board. Details are here: https://www.mikroe.com/usb-i2c-click
 
-The Mikroe board uses a FT260 device to provide USB services. FT260 is a widley used USB interface. 
+The Mikroe board uses a FT260 device to provide USB services. FT260 is a widely used USB interface manufactuired by [FTDI](https://ftdichip.com/)
 
 ### Things to learn:
 1. I2C
