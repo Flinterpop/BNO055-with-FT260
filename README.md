@@ -11,7 +11,8 @@ The Mikroe board uses a FT260 device to provide USB services. FT260 is a widely 
 
 FTDI provides a FT260 Test Utility (with C# source code). Link https://ftdichip.com/wp-content/uploads/2025/10/FT260_Test_Utility_v1.0.0.2.zip 
 
-I used the FT260 C/C++ library available for download from https://ftdichip.com/software-examples/
+I used the FT260 C/C++ library available for download from this page https://ftdichip.com/software-examples/
+Direct link: https://ftdichip.com/wp-content/uploads/2025/08/LibFT260-v1.1.9.zip
 
 FT260 Library App Note: https://ftdichip.com/wp-content/uploads/2025/10/AN_565_UserGuide_For_FT260_Test_Utility_v1.0.pdf
 https://ftdichip.com/software-examples/
