@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{B9334128-1EE6-4E00-96C1-80F77E747AD5}|BNO055_FT260\\BNO055_FT260.vcxproj|C:\\source\\BNO055-with-FT260\\BNO055_FT260\\BNO055_FT260.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B9334128-1EE6-4E00-96C1-80F77E747AD5}|BNO055_FT260\\BNO055_FT260.vcxproj|solutionrelative:BNO055_FT260\\BNO055_FT260.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9334128-1EE6-4E00-96C1-80F77E747AD5}|BNO055_FT260\\BNO055_FT260.vcxproj|C:\\source\\BNO055-with-FT260\\BNO055_SensorAPI-master\\bno055.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9334128-1EE6-4E00-96C1-80F77E747AD5}|BNO055_FT260\\BNO055_FT260.vcxproj|solutionrelative:BNO055_SensorAPI-master\\bno055.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "bno055.h",
+              "DocumentMoniker": "C:\\source\\BNO055-with-FT260\\BNO055_SensorAPI-master\\bno055.h",
+              "RelativeDocumentMoniker": "BNO055_SensorAPI-master\\bno055.h",
+              "ToolTip": "C:\\source\\BNO055-with-FT260\\BNO055_SensorAPI-master\\bno055.h",
+              "RelativeToolTip": "BNO055_SensorAPI-master\\bno055.h",
+              "ViewState": "AgIAAHcLAAAAAAAAAAAAAIwLAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-20T02:16:41.014Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "BNO055_FT260\\BNO055_FT260.cpp",
               "ToolTip": "C:\\source\\BNO055-with-FT260\\BNO055_FT260\\BNO055_FT260.cpp",
               "RelativeToolTip": "BNO055_FT260\\BNO055_FT260.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAuwMwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-20T01:29:52.2Z",
               "EditorCaption": ""
