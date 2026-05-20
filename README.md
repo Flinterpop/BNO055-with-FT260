@@ -9,9 +9,12 @@ The BNO055 supports I2C and UART interfaces and I was proved with a Mikroe USB t
 
 The Mikroe board uses a FT260 device to provide USB services. FT260 is a widely used USB interface manufactuired by [FTDI](https://ftdichip.com/)
 
-FTDI also provides a FT260 Test Utility. Link https://ftdichip.com/wp-content/uploads/2025/10/FT260_Test_Utility_v1.0.0.2.zip 
+FTDI provides a FT260 Test Utility (with C# source code). Link https://ftdichip.com/wp-content/uploads/2025/10/FT260_Test_Utility_v1.0.0.2.zip 
 
-FT260 Librar App Note: https://ftdichip.com/wp-content/uploads/2025/10/AN_565_UserGuide_For_FT260_Test_Utility_v1.0.pdf
+I used the FT260 C/C++ library available for download from https://ftdichip.com/software-examples/
+
+FT260 Library App Note: https://ftdichip.com/wp-content/uploads/2025/10/AN_565_UserGuide_For_FT260_Test_Utility_v1.0.pdf
+https://ftdichip.com/software-examples/
 
 
 ### Things to learn:
