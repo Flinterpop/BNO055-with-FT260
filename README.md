@@ -23,12 +23,8 @@ https://ftdichip.com/software-examples/
 2. FT260 and USB on Windows
 3. BNO055
 
-You don't need to find any API docs for the Mikroe board. All you need is the pinout. However you need to understand the FT260. FTDI provides a library called LibFT260. 
-The GITHub repo is at 
+You don't need to find any API docs for the Mikroe board. All you need is the pinout. However you need to understand the FT260 and the use of the FT260 library.
 
-
-
-https://github.com/boschsensortec/BNO055_SensorAPI
-
+Bosch has provided a small library for the BNO055 which is available from https://github.com/boschsensortec/BNO055_SensorAPI
 
 
