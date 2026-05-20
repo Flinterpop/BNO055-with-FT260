@@ -27,4 +27,9 @@ You don't need to find any API docs for the Mikroe board. All you need is the pi
 
 Bosch has provided a small library for the BNO055 which is available from https://github.com/boschsensortec/BNO055_SensorAPI
 
+I used many refernces to figure this out. I quite enjoyed a document written by By Phillip Dupree (Mechatronics Lord) 
+https://forums.adafruit.com/viewtopic.php?t=92598
+https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/908/1738.Guide-_2D00_-How-to-Integrate-BNO055-Library-into-Tiva-Launchpad-Project.pdf
+
+
 
