@@ -36,3 +36,14 @@ https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/9
 ### So What
 
 The entire project is available from this Repo. The Docs folder has most of the sources I used for this. 
+
+The only file I wrote is ```BNO055_FT260.cpp```
+The hardest part was figuring out these two functions:
+```
+s8 bno055_bus_read(u8 dev_addr, u8 reg_addr, u8* reg_data, u8 cnt)
+```
+and
+```
+s8 bno055_bus_write(u8 dev_addr, u8 reg_addr, u8* reg_data, u8 cnt)
+```
+
