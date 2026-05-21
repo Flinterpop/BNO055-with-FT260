@@ -50,8 +50,8 @@ s8 bno055_bus_read(u8 dev_addr, u8 reg_addr, u8* reg_data, u8 cnt) {
  */
 s8 bno055_bus_write(u8 dev_addr, u8 reg_addr, u8* reg_data, u8 cnt)
 {
-    FT260_STATUS status;
-    uint8_t buffer[64]; // Ensure this is sized correctly (FT260 max write is 60 bytes)
+    FT260_STATUS status{};
+    uint8_t buffer[64]{}; // Ensure this is sized correctly (FT260 max write is 60 bytes)
     DWORD written = 0;
 
     // Construct buffer: Register address followed by data to write
@@ -164,6 +164,21 @@ int main() {
             bno055_convert_float_euler_hpr_deg(&eulerData);
             sprintf_s(buf, "%6.3f %6.3f %6.3f\r\n", eulerData.h, eulerData.p, eulerData.r);
             writeAt(buf, 35, 2);
+            puts("Gravity");
+            s16 gravity_y_s16;
+            bno055_read_gravity_y(&gravity_y_s16);
+            s8 temp_s8;
+            bno055_read_temp_data(&temp_s8);
+            sprintf_s(buf, "Gravity %f  temp: %d\r\n", gravity_y_s16, temp_s8);
+            writeAt(buf, 35, 4);
+
+            float accel_x_f, accel_y_f, accel_z_f;
+            bno055_convert_float_accel_x_msq(&accel_x_f);
+            bno055_convert_float_accel_y_msq(&accel_y_f);
+            bno055_convert_float_accel_z_msq(&accel_z_f);
+            sprintf_s(buf, "Accel:x: %f y: %f  z: %f\r\n", accel_x_f, accel_y_f, accel_z_f);
+            writeAt(buf, 35, 5);
+
             //Sleep(200);
             if (_kbhit())
             {
@@ -203,6 +218,23 @@ int main() {
                     bno055_convert_float_accel_z_msq(&accel_z_f);
                     sprintf_s(buf, "Accel:x: %f y: %f  z: %f\r\n", accel_x_f, accel_y_f, accel_z_f);
                     writeAt(buf, 35, 5);
+
+
+                    s16 quaternion_w_s16, quaternion_x_s16, quaternion_y_s16, quaternion_z_s16;
+                    bno055_read_quaternion_w(&quaternion_w_s16);
+                    bno055_read_quaternion_x(&quaternion_x_s16);
+                    bno055_read_quaternion_y(&quaternion_y_s16);
+                    bno055_read_quaternion_z(&quaternion_z_s16);
+
+                    struct bno055_quaternion_t quaternion;
+                    bno055_read_quaternion_wxyz(&quaternion);
+
+                    sprintf_s(buf, "Quat:w/x/y/z: %f  %f  %f  %f \r\n", quaternion.w, quaternion.x, quaternion.y, quaternion.z);
+                    writeAt(buf, 35, 6);
+
+
+
+
 
                 }
 
